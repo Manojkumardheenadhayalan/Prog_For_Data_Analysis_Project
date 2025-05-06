@@ -59,7 +59,7 @@ def main():
         "Interactive Prediction Dashboard": "Interactive_Prediction_Dashboard"
     }
 
-    choice = st.sidebar.radio("", list(pages.keys()))
+    choice = st.sidebar.radio("Select a page:", list(pages.keys()))
     module_name = pages[choice]
 
     try:
